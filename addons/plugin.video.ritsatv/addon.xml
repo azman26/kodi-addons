@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.ritsatv" name="Ritsa TV Player" version="1.0.0" provider-name="azman">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Play content from RitsaTV</summary>
+    <summary lang="pl_PL">Odtwarzaj materiały z serwisu RitsaTV</summary>
+    <description lang="en_GB">A simple addon to browse and play video clips from the RitsaTV website.</description>
+    <description lang="pl_PL">Prosta wtyczka do przeglądania i odtwarzania klipów wideo ze strony RitsaTV.</description>
+    <disclaimer lang="en_GB">This addon provides access to content available on the public internet. The author is not responsible for the content.</disclaimer>
+    <disclaimer lang="pl_PL">Ta wtyczka zapewnia dostęp do treści dostępnych w publicznym internecie. Autor nie jest odpowiedzialny za te treści.</disclaimer>
+		<language>pl</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+  </extension>
+</addon>

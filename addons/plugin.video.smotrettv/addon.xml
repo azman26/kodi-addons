@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.smotrettv" name="Smotret.tv" version="1.0.0" provider-name="azman">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.cloudscraper"/> 
+    </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pl_PL">Oglądaj kanały TV na żywo z smotret.tv</summary>
+    <description lang="pl_PL">W pełni samowystarczalna wtyczka do przeglądania i oglądania kanałów TV z portalu smotret.tv.</description>
+    <disclaimer lang="pl_PL">Autor nie ponosi odpowiedzialności za treść i nie jest powiązany z serwisem smotret.tv.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>

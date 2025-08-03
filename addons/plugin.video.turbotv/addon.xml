@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.turbotv" name="TurboTV" version="1.0.0" provider-name="azman">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pl">Wtyczka do oglądania kanałów z TurboTV.cc</summary>
+    <description lang="pl">Umożliwia oglądanie kanałów telewizyjnych z portalu turbotv.cc.</description>
+    <disclaimer lang="pl">Autor wtyczki nie jest powiązany z dostawcą treści.</disclaimer>
+		<language>pl</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+  </extension>
+</addon>
