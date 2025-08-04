@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.dokumentalnenet" name="dokumentalne.net" version="1.0.0" provider-name="azman">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<description>dokumentalne.net</description>
+		<summary>dokumentalne.net</summary>
+		<language>pl</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+	</extension>
+</addon>
+<addon id="plugin.video.ritsatv" name="Ritsa TV Player" version="1.0.0" provider-name="azman">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Play content from RitsaTV</summary>
+    <summary lang="pl_PL">Odtwarzaj materiały z serwisu RitsaTV</summary>
+    <description lang="en_GB">A simple addon to browse and play video clips from the RitsaTV website.</description>
+    <description lang="pl_PL">Prosta wtyczka do przeglądania i odtwarzania klipów wideo ze strony RitsaTV.</description>
+    <disclaimer lang="en_GB">This addon provides access to content available on the public internet. The author is not responsible for the content.</disclaimer>
+    <disclaimer lang="pl_PL">Ta wtyczka zapewnia dostęp do treści dostępnych w publicznym internecie. Autor nie jest odpowiedzialny za te treści.</disclaimer>
+		<language>pl</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+  </extension>
+</addon>
+<addon id="plugin.video.smotrettv" name="Smotret.tv" version="1.0.0" provider-name="azman">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup4"/>
+        <import addon="script.module.cloudscraper"/> 
+    </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pl_PL">Oglądaj kanały TV na żywo z smotret.tv</summary>
+    <description lang="pl_PL">W pełni samowystarczalna wtyczka do przeglądania i oglądania kanałów TV z portalu smotret.tv.</description>
+    <disclaimer lang="pl_PL">Autor nie ponosi odpowiedzialności za treść i nie jest powiązany z serwisem smotret.tv.</disclaimer>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+    </assets>
+  </extension>
+</addon>
+<addon id="plugin.video.turbotv" name="TurboTV" version="1.0.0" provider-name="azman">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="pl">Wtyczka do oglądania kanałów z TurboTV.cc</summary>
+    <description lang="pl">Umożliwia oglądanie kanałów telewizyjnych z portalu turbotv.cc.</description>
+    <disclaimer lang="pl">Autor wtyczki nie jest powiązany z dostawcą treści.</disclaimer>
+		<language>pl</language>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.png</fanart>
+		</assets>
+  </extension>
+</addon>
+<addon id="repository.azman" name="azman" version="1.0" provider-name="azman">
+    <extension point="xbmc.addon.repository" name="azman">
+        <dir>
+            <info compressed="false">https://azman26.github.io/kodi-addons/addons.xml</info>
+            <checksum>https://azman26.github.io/kodi-addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://azman26.github.io/kodi-addons/addons/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Wtyczki do odtwarzacza Kodi (v.20,21)</summary>
+        <description>Wtyczki do odtwarzacza Kodi (v.20,21)</description>
+        <platform>all</platform>
+        <assets>
+            <icon></icon>
+            <fanart></fanart>            
+        </assets>
+    </extension>
+</addon>
+</addons>
