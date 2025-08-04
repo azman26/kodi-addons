@@ -1,13 +1,19 @@
-<addon id="repository.azman" name="Repozytorium azman" version="1.0.0" provider-name="azman">
-    <extension point="xbmc.addon.repository" name="Repozytorium azman26">
-        <info compressed="false">https://azman26.github.io/kodi-addons/addons.xml</info>
-        <checksum>https://azman26.github.io/kodi-addons/addons.xml.md5</checksum>
-        <datadir zip="false">https://azman26.github.io/kodi-addons/</datadir>
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.azman" name="azman" version="1.0" provider-name="azman">
+    <extension point="xbmc.addon.repository" name="azman">
+        <dir>
+            <info compressed="false">https://azman26.github.io/kodi-addons/addons.xml</info>
+            <checksum>https://azman26.github.io/kodi-addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://azman26.github.io/kodi-addons/addons/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="pl">Repozytorium dodatków Kodi od azman</summary>
-        <description lang="pl">Repozytorium dodatków Kodi od azman</description>
+        <summary>Wtyczki do odtwarzacza Kodi (v.20,21)</summary>
+        <description>Wtyczki do odtwarzacza Kodi (v.20,21)</description>
         <platform>all</platform>
+        <assets>
+            <icon></icon>
+            <fanart></fanart>            
+        </assets>
     </extension>
 </addon>
-
